@@ -1,0 +1,60 @@
+<view class="container-express">
+    <view class="logo">
+      <image mode="aspectFit" src="/images/tizhong.png"></image>
+    </view>
+    <view class="middles">
+     
+    
+      <picker bindchange="pickChange" value="{{index}}" range="{{sexarray}}" >
+
+        <input class="sex" placeholder="性别" value="{{sexarray[index]}}" disabled> 
+           
+        </input >
+      </picker>
+     
+      <picker bindchange="heightChange" value="{{heightIndex}}" range="{{heightArray}}" >
+
+        <input class="sex" placeholder="身高CM" value="{{heightArray[heightIndex]}}{{cm}}" disabled> 
+        </input >
+      </picker>
+
+
+          
+      <picker bindchange="weightChange" value="{{weightIndex}}" range="{{weightArray}}" >
+
+        <input class="sex" placeholder="体重KG" value="{{weightArray[weightIndex]}}{{kg}}" disabled> 
+           
+        </input >
+      </picker>
+     
+    </view>
+    <view class="search" bind:tap="getBox">查询</view>
+    <view class="card" wx:if="{{hiddens}}">
+        
+        <view class="type"> 
+          BMI指数：{{cent.bmi}}
+        </view>
+        <view class="cent"> 
+          正常BMI指数：{{cent.normbmi}}
+        </view>
+        <view class="cent"> 
+          理想体重：{{cent.idealweight}}
+        </view>
+        <view class="cent"> 
+          水平：{{cent.level}}
+        </view>
+        <view class="cent"> 
+          相关疾病发病的危险：{{cent.danger}}
+        </view>
+        <view class="qita" wx:if="{{cent.status ==0 }}"> 
+          是否正常：不正常
+        </view>
+        <view class="qita" wx:if="{{cent.status ==1 }}"> 
+          是否正常：正常
+        </view>
+    </view>
+
+    <view class="jishu">
+        技术支持:qyh0518@163.com
+    </view>
+    </view>

@@ -1,0 +1,29 @@
+<view class="container-express">
+    <view class="logo">
+      <image mode="aspectFit" src="/images/wenda.png"></image>
+    </view>
+    <view class="middles">
+      <input placeholder="请输入您的问题" placeholder-class="inpValPlaceholder" id="input" class="inpVal" bindinput="inputValue">
+        <!-- <image src="/images/saoyisao.png"></image> -->
+      </input><view class="search" bind:tap="getBox">提问</view>
+      
+    </view>
+    <view class="card" wx:if="{{hiddens}}">
+        
+        <view class="type"> 
+          类型：{{cent.type}}
+        </view>
+        <view class="cent"> 
+          回答内容：{{cent.content}}
+        </view>
+        <view class="qita"> 
+          其他相关问题：<span class="rel"  data-rel="{{relquestion}}" bindtap='rel'>{{relquestion}}</span>
+        </view>
+    </view>
+    <!-- <view   style="height:80vh;display: flex;justify-content: center;z-index: -9;">
+     {{relquestion}}
+    </view> -->
+    <view class="jishu">
+        技术支持:qyh0518@163.com
+    </view>
+    </view>

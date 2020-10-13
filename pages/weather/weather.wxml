@@ -1,0 +1,223 @@
+<!--index.wxml-->
+<view class="containerS">
+    <view class="header" >
+      <view style="{{'height: ' + statusBarHeight}}"></view>
+      <view class="address" >
+        <image class="iconfont icon-plus-line"></image>
+        <text>{{curCityAddress}}</text>
+        <image class="iconfont icon-dingwei"></image>
+      </view>
+      <view class="airAndTime">
+          <view class="airPollution">
+            <image class="iconfont icon-qingtian"></image>
+            能见度:{{weather.now.vis}}
+          </view>
+          <view class="releaseTime">1秒前发布</view>
+      </view>
+      <view class="weatherInfo">
+          <view class="infoTop">
+              <text>{{weather.now.fl}}℃.</text>
+              <text>{{weather.now.cond_txt}}</text>
+          </view>
+          <view class="infoContent">
+              <view class="temp d-f">
+              <image class="iconfont icon-wendu"></image>
+              {{weather.now.hum}}</view>
+              <view class="wind d-f">
+              <image class="iconfont icon-feng"></image>
+               {{weather.now.wind_sc}}级</view>
+              <view class="humidity d-f">
+              <image class="iconfont icon-shidu"></image>
+              {{weather.now.hum}}</view>
+          </view>
+          <view class="infoBottom">{{weather.now.cond_txt}}/{{weather.now.wind_dir}} {{weather.now.wind_sc}}级</view>
+      </view>
+    </view>
+    <view class="content">
+
+      <view class="weekWea">
+          <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>今天</view>
+                <view>{{weather.daily_forecast[0].date}}</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="iconfont  ">
+                  <image src="/images/weather/{{weather.daily_forecast[0].cond_code_d}}.png" class="img"></image>
+                </view>
+                <view>{{weather.daily_forecast[0].tmp_max}}~{{weather.daily_forecast[0].tmp_min}}</view>
+              </view>
+              <view class="weaItemBottom">
+                <image class="iconfont icon-shidu"></image>
+                <view style="font-size:25rpx">湿度:{{weather.daily_forecast[0].hum}}</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>{{weather.daily_forecast[0].wind_dir}}</view>
+                <view>{{weather.daily_forecast[0].wind_sc}}级</view>
+              </view>
+          </view>
+          <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>明天</view>
+                <view>{{weather.daily_forecast[1].date}}</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="">
+                   <image src="/images/weather/{{weather.daily_forecast[1].cond_code_d}}.png" class="img"></image>
+                </view>
+                <view>{{weather.daily_forecast[1].tmp_max}}~{{weather.daily_forecast[1].tmp_min}}</view>
+              </view>
+              <view class="weaItemBottom">
+                <image class="iconfont icon-shidu"></image>
+                <view style="font-size:25rpx">湿度:{{weather.daily_forecast[1].hum}}</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>{{weather.daily_forecast[1].wind_dir}}</view>
+                <view>{{weather.daily_forecast[1].wind_sc}}级</view>
+              </view>
+          </view>
+          <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>后天</view>
+                <view>{{weather.daily_forecast[2].date}}</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="iconfont  ">
+                 <image src="/images/weather/{{weather.daily_forecast[2].cond_code_d}}.png" class="img"></image>
+                </view>
+                <view>{{weather.daily_forecast[2].tmp_max}}~{{weather.daily_forecast[2].tmp_min}}</view>
+              </view>
+              <view class="weaItemBottom">
+                <image class="iconfont icon-shidu"></image>
+                <view style="font-size:25rpx">湿度:{{weather.daily_forecast[2].hum}}</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>{{weather.daily_forecast[2].wind_dir}}</view>
+                <view>{{weather.daily_forecast[2].wind_sc}}级</view>
+              </view>
+          </view>
+          <!-- <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>今天</view>
+                <view>05-20</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="iconfont icon-duoyun "></view>
+                <view>20~30</view>
+              </view>
+              <view class="weaItemBottom">
+                <view>优</view>
+                <view>45</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>南风</view>
+                <view>2级</view>
+              </view>
+          </view>
+          <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>今天</view>
+                <view>05-20</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="iconfont icon-duoyun "></view>
+                <view>20~30</view>
+              </view>
+              <view class="weaItemBottom">
+                <view>优</view>
+                <view>45</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>南风</view>
+                <view>2级</view>
+              </view>
+          </view>
+          <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>今天</view>
+                <view>05-20</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="iconfont icon-duoyun "></view>
+                <view>20~30</view>
+              </view>
+              <view class="weaItemBottom">
+                <view>优</view>
+                <view>45</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>南风</view>
+                <view>2级</view>
+              </view>
+          </view>
+          <view class="weekWeaItem">
+              <view class="weaItemTop">
+                <view>今天</view>
+                <view>05-20</view>
+              </view>
+              <view class="weaItemTop2">
+                <view class="iconfont icon-duoyun "></view>
+                <view>20~30</view>
+              </view>
+              <view class="weaItemBottom">
+                <view>优</view>
+                <view>45</view>
+              </view>
+              <view class="weaItemBottom2">
+                <view>南风</view>
+                <view>2级</view>
+              </view>
+          </view>
+          <view class="weekWeaItem">
+              <view class="weaItemTop weaItemItem">
+                <view>今天</view>
+                <view>05-20</view>
+              </view>
+              <view class="weaItemTop2 weaItemItem">
+                <view class="iconfont icon-duoyun "></view>
+                <view>20~30</view>
+              </view>
+              <view class="weaItemBottom weaItemItem">
+                <view>优</view>
+                <view>45</view>
+              </view>
+              <view class="weaItemBottom2 weaItemItem">
+                <view>南风</view>
+                <view>2级</view>
+              </view>
+          </view> -->
+      </view>
+    </view>
+    <view class="footer">
+        <view class="footItem">
+          <view class="footItemTop iconfont  ">
+             <image src="/images/yifu.png" class="img"></image>
+          </view>
+          <view class="footItemCenter ">{{drsg}}</view>
+          <view class="footItemBottom">穿衣指数</view>
+        </view>
+        <view class="footItem">
+          <view class="footItemTop  ">
+           <image src="/images/shushi.png" class="img"></image>
+          </view>
+          <view class="footItemCenter ">{{comf}}</view>
+          <view class="footItemBottom">舒适度指数</view>
+        </view>
+        <view class="footItem">
+          <view class="footItemTop ">
+           <image src="/images/zhiwaixian.png" class="img"></image>
+          </view>
+          <view class="footItemCenter ">{{uv}}</view>
+          <view class="footItemBottom">紫外线指数</view>
+        </view>
+        <view class="footItem">
+          <view class="footItemTop">
+           <image src="/images/xiche.png" class="img"></image>
+          </view>
+          <view class="footItemCenter ">{{cw}}</view>
+          <view class="footItemBottom">洗车指数</view>
+        </view>
+    </view>
+    <view class="footers">技术支持：qyh0518@163.com</view>
+  </view>
+  

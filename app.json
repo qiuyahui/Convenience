@@ -1,0 +1,74 @@
+{
+  "pages":[
+        "pages/menu/menu",
+      "pages/tizhong/tizhong",
+      "pages/express/express",
+     
+    "pages/translate/translate",
+    "pages/youjia/youjia",
+    "pages/munPage/munPage",
+  
+    "pages/weather/weather",
+    "pages/wenda/wenda",
+    "pages/telmun/telnum",
+    "pages/lottery/lottery",
+  
+    "pages/home/home",
+    "pages/about/about"
+  
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "附近",
+        "iconPath": "images/fujin.png",
+        "selectedIconPath": "images/fujin.png"
+      },
+    {
+      "pagePath": "pages/youjia/youjia",
+      "text": "油价",
+      "iconPath": "images/youjia.png",
+      "selectedIconPath": "images/youjia.png"
+    },
+    {
+      "pagePath": "pages/translate/translate",
+      "text": "便民工具",
+      "iconPath": "images/gongju.png",
+      "selectedIconPath": "images/gongju.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于我们",
+      "iconPath": "images/gywm.png",
+      "selectedIconPath": "images/gywm.png"
+    }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.3",
+      "provider": "wx50b5593e81dd937a"
+    },
+    "chooseLocation": {
+      "version": "1.0.0",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  }
+ 
+ 
+}

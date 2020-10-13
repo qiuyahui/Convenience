@@ -1,0 +1,38 @@
+<view class="container-express">
+    <view class="logo">
+      <image mode="aspectFit" src="/images/shoujihao.png"></image>
+    </view>
+    <view class="middles">
+      <input placeholder="请输入手机号" placeholder-class="inpValPlaceholder" id="input" class="inpVal" bindinput="inputValue">
+        <!-- <image src="/images/saoyisao.png"></image> -->
+      </input><view class="search" bind:tap="getBox">查询</view>
+      
+    </view>
+    
+    <view   style="height:80vh;display: flex;justify-content: center;">
+      <view class="card" wx:if="{{hiddens}}">
+        
+          <view class="telnum"> 
+            手机号：{{cent.shouji}}
+          </view>
+          <view class="yunyingshang"> 
+            运营商：{{cent.company}}
+          </view>
+          <view class="cardSex"> 
+            地区：{{cent.province}}{{cent.city}}
+          </view>
+
+          <view class="cardType"> 
+            卡类型：{{cent.cardtype}}
+          </view>
+
+          <view class="quhao"> 
+            区号：{{cent.areacode}}
+          </view>
+      
+      </view>
+    </view>
+    <view class="jishu">
+        技术支持:qyh0518@163.com
+    </view>
+    </view>

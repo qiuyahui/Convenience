@@ -1,0 +1,152 @@
+/**index.wxss**/
+.containerS{
+    /* height: 130vh; */
+    background: #eee;
+    padding-bottom: 30rpx;
+  }
+  .d-f{
+    display: flex;
+  }
+  .header{
+    width: 100%;
+    height: 65vh;
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589975469940&di=2ef2313d25897a0fa76a2a8ebb1022d5&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20171105%2F981a71ec1ca34152a32fcf4a0db98eed.jpeg");
+    background-size:100%;
+    position: relative;
+  }
+  .address{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 30rpx;
+    
+  }
+  .address text{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-right: 30rpx;
+  }
+  .airAndTime{
+    margin-top: 50rpx;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding:  30rpx;
+    font-size:26rpx;
+  }
+  .airPollution{
+    background-color:rgba(0, 0, 0, 0.3);
+    padding:7rpx 15rpx;
+    border-radius: 8rpx;
+    height: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .releaseTime{
+    height: 40rpx;
+    line-height: 40rpx;
+  }
+  image{
+    height: 35rpx;
+    width: 35rpx;
+  }
+  
+  .weatherInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: absolute;
+    bottom:35%; */
+    width: 100%;
+    height: 60%
+  }
+  .infoTop{
+    font-size: 100rpx;
+    color: white;
+    margin-bottom: 15rpx;
+  }
+  .infoTop text:nth-child(2){
+    font-size: 26rpx;
+  }
+  .infoContent{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 25rpx;
+    font-size: 26rpx;
+  }
+  .infoBottom{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.3);
+    padding:7rpx 15rpx;
+    border-radius: 8rpx;
+    height: 40rpx;
+    font-size: 26rpx;
+    width: 35%;
+    text-align: center;
+  }
+   .weekWea{
+    background: white;
+
+    display: flex;
+    width: 100%;
+    overflow: auto;
+  }
+  .weekWeaItem{
+    width: 33%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .weaItemItem{
+    padding: 15rpx 0;
+  }
+  .footer{
+    margin-top: 30rpx;
+    background: white;
+    padding: 20rpx 0;
+    text-align: center;
+    display: flex;
+  }
+  .footItem{
+    width: 25%;
+  }
+  .footItemCenter{
+    padding: 15rpx 0;
+  }
+  .footItemTop{
+    font-size: 60rpx;
+    padding-top: 15rpx;
+    padding-bottom: 10rpx;
+    color: rgb(112, 109, 109);
+  }
+  .footItemCenter{
+    font-weight: 200%;
+    font-size: 35rpx;
+  }
+  .footItemBottom{
+    color: rgb(112, 109, 109);
+  }
+
+  .img{
+    height: 60rpx;
+    width: 60rpx;
+
+  }
+
+  .footers{
+  display: flex;
+  justify-content: center;
+  font-size: 35rpx;
+  padding-bottom: 10rpx;
+  margin-top: 20rpx;
+  color: #7744ff;
+}

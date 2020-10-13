@@ -1,0 +1,83 @@
+<view class="content">
+    <view class="contentTitle">这么好用的便民工具赶紧去分享吧！ </view>
+    <view class="btns">
+ 
+     
+      <!-- <i-button bind:click="handleClick" type="info" inline="true" size="small" i-class="i-btn">进入地图</i-button> -->
+    </view>
+    <view class="menuList">
+        <view class="menuItem" bindtap="kuaidi" >
+          <view class="menuIcon">
+            <image src="/images/kuaidi.png" width></image>
+          </view>
+         <view class="menuTitle">快递查询</view>
+          </view>
+
+
+            <view class="menuItem" bindtap="shoujihao" >
+              <view class="menuIcon">
+                <image src="/images/shoujihao.png" width></image>
+              </view>
+             <view class="menuTitle">号码归属地</view>
+              </view>
+
+
+                 <view class="menuItem" bindtap="tianqi" >
+              <view class="menuIcon">
+                <image src="/images/tianqi.png" width>
+                  
+                </image>
+              </view>
+             <view class="menuTitle">天气</view>
+              </view>
+
+               <view class="menuItem" bindtap="wenda" >
+              <view class="menuIcon">
+                <image src="/images/wenda.png" width></image>
+              </view>
+             <view class="menuTitle">智能问答</view>
+              </view>
+
+              <view class="menuItem" bindtap="tizhong" >
+                <view class="menuIcon">
+                  <image src="/images/tizhong.png" width></image>
+                </view>
+               <view class="menuTitle">体重计算器</view>
+                </view>
+
+          <!-- <view class="menuItem" bindtap="caipiao">
+            <view class="menuIcon">
+              <image src="/images/caipiao.png" width>
+               
+              </image>
+            </view>
+           <view class="menuTitle">彩票开奖</view>
+            </view>
+            <view class="menuItem" bindtap="guishudi">
+              <view class="menuIcon">
+                <image src="/images/guishudi.png" width></image>
+              </view>
+             <view class="menuTitle">号码归属地</view>
+              </view>
+              <view class="menuItem" bindtap="tianqi" >
+                <view class="menuIcon">
+                  <image src="/images/tianqi.png" width></image>
+                </view>
+               <view class="menuTitle">天气</view>
+                </view>
+                <view class="menuItem" bindtap="youjia">
+                  <view class="menuIcon">
+                    <image src="/images/youjia.png" width></image>
+                  </view>
+                 <view class="menuTitle">石油价格</view>
+                  </view>
+
+                  <view class="menuItem" bindtap="obd">
+                    <view class="menuIcon">
+                      <image src="/images/OBD.png" width></image>
+                    </view>
+                   <view class="menuTitle">OBD查询</view>
+                    </view> -->
+    </view>
+    <view class="contentFooter"><text>技术支持：qyh0518@163.com</text></view>
+</view>

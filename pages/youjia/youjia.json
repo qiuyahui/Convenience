@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+  },
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "今日油价",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+}

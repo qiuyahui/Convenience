@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+      "i-button": "/components/iview/button/index"
+  },
+  
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "附近充电桩",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+
+
+
+
+}

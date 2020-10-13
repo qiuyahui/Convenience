@@ -1,0 +1,97 @@
+/* pages/youjia/youjia.wxss */
+page{
+  background-image: url("https://zzu-security-file.oss-cn-beijing.aliyuncs.com/xcx/youjiabj.jpg")
+}
+.top{
+  height: 80rpx;
+  position: relative;
+}
+.img{
+  height: 50rpx;
+  width: 50rpx;
+  border: none;
+  /* margin-right : 20rpx */
+}
+.top_left{
+  padding: 20rpx;
+  color: #fff
+}
+.top_right{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  
+}
+.top_right_right{
+  float: right;
+  color: #fff
+}
+
+.cent{
+  display: flex;
+  background-color: #fff;
+  height: 100rpx;
+  width: 90%;
+  margin-left: 5%;
+  top: 200rpx;
+  border-radius: 20rpx;
+  align-items: center;
+  justify-content : space-between;
+  margin-bottom: 30rpx;
+
+}
+.spn{
+  font-size: 50rpx;
+  margin-left: 30rpx;
+  
+}
+.cent_left{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.spn_d{
+  align-self: flex-start;
+  margin-top: 14rpx;
+  margin-left: 17rpx;
+}
+.cent_vie{
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+.cent_right{
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+}
+.cent_vie_right_sp{
+  font-size: 50rpx;
+}
+.cent_vie_right_d{
+    margin-left: 10rpx;
+    color: darkgrey;
+}
+
+.btn{
+  height: 100rpx;
+  width: 90%;
+  margin-left: 5%;
+}
+.btn_right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.lo{
+  margin: 20rpx;
+  height: 60rpx;
+  width: 60rpx;
+ 
+}
+
+.btns[plain]{
+  border: 0;
+  width: 180rpx;
+  float: left;
+}

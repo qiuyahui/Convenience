@@ -1,0 +1,191 @@
+<view class="content">
+    <view class="contentTitle">您当前位置：{{curCityAddress}}</view>
+    <view class="menuList">
+        <view class="menuItem" bindtap="cesuo" data-enum="公厕">
+          <view class="menuIcon">
+            <image src="/images/cesuo.png" width></image>
+          </view>
+         <view class="menuTitle">公厕</view>
+          </view>
+
+       <view class="menuItem" bindtap="cdz" data-enum="充电桩">
+          <view class="menuIcon">
+            <image src="/images/cdz.png" width></image>
+          </view>
+         <view class="menuTitle">充电桩</view>
+          </view>
+
+           <view class="menuItem" bindtap="caishichang" data-enum="菜市场">
+          <view class="menuIcon">
+            <image src="/images/caishichang.png" width></image>
+          </view>
+         <view class="menuTitle">菜市场</view>
+          </view>
+           <view class="menuItem" bindtap="chongdianbao" data-enum="充电宝">
+          <view class="menuIcon">
+            <image src="/images/chongdianbao.png" width></image>
+          </view>
+         <view class="menuTitle">充电宝</view>
+          </view>
+           <view class="menuItem" bindtap="daxue" data-enum="大学">
+          <view class="menuIcon">
+            <image src="/images/daxue.png" width></image>
+          </view>
+         <view class="menuTitle">大学</view>
+          </view>
+           <view class="menuItem" bindtap="dianyingyuan" data-enum="电影院">
+          <view class="menuIcon">
+            <image src="/images/dianyingyuan.png" width></image>
+          </view>
+         <view class="menuTitle">电影院</view>
+          </view>
+           <view class="menuItem" bindtap="ganxidian" data-enum="干洗店">
+          <view class="menuIcon">
+            <image src="/images/ganxidian.png" width></image>
+          </view>
+         <view class="menuTitle">干洗店</view>
+          </view>
+           <view class="menuItem" bindtap="gongyuan" data-enum="公园">
+          <view class="menuIcon">
+            <image src="/images/gongyuan.png" width></image>
+          </view>
+         <view class="menuTitle">公园</view>
+          </view>
+         <view class="menuItem" bindtap="haitan" data-enum="海滩">
+          <view class="menuIcon">
+            <image src="/images/haitan.png" width></image>
+          </view>
+         <view class="menuTitle">海滩</view>
+          </view>
+           <view class="menuItem" bindtap="haixian" data-enum="海鲜">
+          <view class="menuIcon">
+            <image src="/images/haixian.png" width></image>
+          </view>
+         <view class="menuTitle">海鲜</view>
+          </view>
+           <view class="menuItem" bindtap="jiayouzhan" data-enum="加油站">
+          <view class="menuIcon">
+            <image src="/images/jiayouzhan.png" width></image>
+          </view>
+         <view class="menuTitle">加油站</view>
+          </view>
+           <view class="menuItem" bindtap="jiudian" data-enum="酒店">
+          <view class="menuIcon">
+            <image src="/images/jiudian.png" width></image>
+          </view>
+         <view class="menuTitle">酒店</view>
+          </view>
+           <view class="menuItem" bindtap="kendeji" data-enum="KFC">
+          <view class="menuIcon">
+            <image src="/images/kendeji.png" width></image>
+          </view>
+         <view class="menuTitle">KFC</view>
+          </view>
+           <view class="menuItem" bindtap="lanqiuchang" data-enum="篮球场">
+          <view class="menuIcon">
+            <image src="/images/lanqiuchang.png" width></image>
+          </view>
+         <view class="menuTitle">篮球场</view>
+          </view>
+            <view class="menuItem" bindtap="zuqiuchang" data-enum="足球场">
+          <view class="menuIcon">
+            <image src="/images/zuqiuchang.png" width></image>
+          </view>
+         <view class="menuTitle">足球场</view>
+          </view>
+          <view class="menuItem" bindtap="shangchang" data-enum="商场">
+          <view class="menuIcon">
+            <image src="/images/shangchang.png" width></image>
+          </view>
+         <view class="menuTitle">商场</view>
+          </view>
+          <view class="menuItem" bindtap="tingchechang" data-enum="停车场">
+          <view class="menuIcon">
+            <image src="/images/tingchechang.png" width></image>
+          </view>
+         <view class="menuTitle">停车场</view>
+          </view>
+          <view class="menuItem"  bindtap="wangba" data-enum="网吧">
+          <view class="menuIcon">
+            <image src="/images/wangba.png" width></image>
+          </view>
+         <view class="menuTitle">网吧</view>
+          </view>
+          <view class="menuItem" bindtap="youyongguan" data-enum="游泳馆">
+          <view class="menuIcon">
+            <image src="/images/youyongguan.png" width></image>
+          </view>
+         <view class="menuTitle">游泳馆</view>
+          </view>
+          <view class="menuItem" bindtap="xicanting" data-enum="西餐厅">
+          <view class="menuIcon">
+            <image src="/images/xicanting.png" width></image>
+          </view>
+         <view class="menuTitle">西餐厅</view>
+          </view>
+          <view class="menuItem" bindtap="yaodian" data-enum="药店">
+          <view class="menuIcon">
+            <image src="/images/yaodian.png" width></image>
+          </view>
+         <view class="menuTitle">药店</view>
+          </view>
+          <view class="menuItem"  bindtap="yinhang" data-enum="银行">
+          <view class="menuIcon">
+            <image src="/images/yinhang.png" width></image>
+          </view>
+         <view class="menuTitle">银行</view>
+          </view>
+              <view class="menuItem"  bindtap="ditiekou" data-enum="地铁站">
+          <view class="menuIcon">
+            <image src="/images/ditiekou.png" width></image>
+          </view>
+         <view class="menuTitle">地铁站</view>
+          </view>
+                <view class="menuItem"  bindtap="gongjiaozhan" data-enum="公交车站">
+          <view class="menuIcon">
+            <image src="/images/gongjiaozhan.png" width></image>
+          </view>
+         <view class="menuTitle">公交车站</view>
+          </view>
+                <view class="menuItem"  bindtap="bianlidian" data-enum="便利店">
+          <view class="menuIcon">
+            <image src="/images/bianlidian.png" width></image>
+          </view>
+         <view class="menuTitle">便利店</view>
+          </view>
+                <view class="menuItem"  bindtap="ktv" data-enum="KTV">
+          <view class="menuIcon">
+            <image src="/images/ktv.png" width></image>
+          </view>
+         <view class="menuTitle">KTV</view>
+          </view>
+                <view class="menuItem"  bindtap="xiaochi" data-enum="小吃快餐">
+          <view class="menuIcon">
+            <image src="/images/xiaochi.png" width></image>
+          </view>
+         <view class="menuTitle">小吃快餐</view>
+          </view>
+        
+                   <view class="menuItem"  bindtap="zensuo" data-enum="诊所">
+          <view class="menuIcon">
+            <image src="/images/zensuo.png" width></image>
+          </view>
+         <view class="menuTitle">诊所</view>
+          </view>
+
+         <view class="menuItem"  bindtap="qixiu" data-enum="汽车维修">
+          <view class="menuIcon">
+            <image src="/images/qixiu.png" width></image>
+          </view>
+         <view class="menuTitle">汽车维修</view>
+          </view>
+
+           <view class="menuItem"  bindtap="jingdian" data-enum="旅游景点">
+          <view class="menuIcon">
+            <image src="/images/jingdian.png" width></image>
+          </view>
+         <view class="menuTitle">旅游景点</view>
+          </view>
+    </view>
+    <view class="contentFooter"><text>技术支持：qyh0518@163.com</text></view>
+</view>

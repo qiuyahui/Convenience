@@ -1,0 +1,31 @@
+<view class="aboutContent">
+  <view class="aboutHeader">
+      <view class="mapIcon">
+        <image src="/images/dingweis.png" width></image>
+      </view>
+      <view class="mapVersion">掌上地图（V2.0）- 出门必备</view>
+      <view class="mapDesc">这么实用的生活工具，快去分吧</view>
+      <view class="mapBtn">
+        <button open-type='share'>
+        <image src="/images/fenxiang.png"></image>
+        点击这里分享</button>
+      </view>
+  </view>
+  <view class="aboutInfo">
+    <view class="card">
+      <view class="cardAvatar">
+        <image src="/images/weixin.png"></image>
+        微信
+      </view>
+      <view class="cardContent" data-text="17839623919" bindtap="copyNum" data-lockerid='{{items.text}}'>17839623919(点击复制)</view>
+    </view>
+    <view class="card">
+      <view class="cardAvatar">
+        <image src="/images/weixin.png"></image>
+        联系作者
+      </view>
+      <view class="cardContent" data-text="17839623919" bindtap="callPhone">17839623919(点击拨打)</view>
+    </view>
+  </view>
+  <view class="aboutFooter">技术支持：qyh0518@163.com</view>
+</view>

@@ -1,0 +1,163 @@
+
+
+<view class="top">
+
+
+      <view class="top_left">调价日：{{dates}}</view>
+
+      <view class="top_right">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">                                   
+          <image src="/images/ditu.png" class="img"></image>
+          <view class="top_right_right" wx:if="{{hiddens}}">地区：{{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}} </view>
+          <view class="top_right_right" wx:if="{{hidden}}">地区：{{province}}    {{city}} </view>
+         </picker> 
+      </view>   
+      </view>
+  
+
+
+<view class="top">
+  <view class="top_left">{{weather.temp}}℃ {{weather.weather}} {{weather.winddirect}}</view>
+  <view class="top_right">
+   
+    <view class="top_right_right">PM2.5 {{weather.aqi.pm2_5}}</view>
+  </view>
+</view>
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">0 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      柴油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil0}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+      
+</view>
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">89 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil89}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">90 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil90}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">92 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil92}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">93 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil93}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">95 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil95}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+  
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">97 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil97}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+<view class="cent">
+  <view class="cent_left">
+    <span class="spn">98 </span>
+    <span class="spn_d"># </span>
+    <span class="cent_vie">
+      汽油
+    </span>
+  </view>
+
+    <view class="cent_right">
+      <span class="cent_vie_right_sp">{{oils.oil98}}</span>
+      <span class="cent_vie_right_d">(元/升)</span>
+    </view>
+</view>
+
+
+<view class="btn">
+  <view class="btn_right"> 
+    <!-- <image src="/images/pyq.png" class="lo"></image> -->
+      <button plain="true" class="btns" open-type="share">
+        <image src="/images/fx.png" class="lo" ></image>
+      </button>
+      
+ 
+    
+  </view>
+</view>
+  
+

@@ -1,0 +1,74 @@
+<view class="container-express">
+  <view class="logo">
+    <image mode="aspectFit" src="/images/logo.jpg"></image>
+  </view>
+  <view class="middles">
+    <input placeholder="请输入订单号查询" placeholder-class="inpValPlaceholder" id="input" class="inpVal" bindinput="inputValue" value='{{inputVal}}'> 
+     
+    </input>
+    <view class="search" bind:tap="getBox">查询</view>
+    <view class="vi"  bindtap="scanCode">
+      <image src="/images/saoyisao.png" style="width:60rpx;height:60rpx;" ></image>
+    </view>
+  </view>
+
+  <view  wx:if="{{hiddens}}">
+    <view class="fooder" >
+      <view>
+        <text class="leftText">订单号:</text>
+        <text class="rightText">{{searchData.number}}</text>
+      </view>
+      <view>
+        <text class="leftText">是否签收:</text>
+        <text class="rightText">{{searchData.issign === "1" ? '已签收' : '未签收'}}</text>
+      </view>
+      <view>
+        <text class="middle leftText"> 快递名称:</text>
+        <text class="rightText middle">{{searchData.expName}}</text>
+        <image class="middle" src="{{searchData.logo}}" style="margin-left:12rpx;width:24rpx;height:24rpx;display:inline-block;" />
+      </view>
+      <view>
+        <text class="leftText">快递官网:</text>
+        <text class="rightText">{{searchData.expSite}}</text>
+      </view>
+      <view>
+        <text class="leftText">快递公司电话:</text>
+        <text class="rightText">{{searchData.expPhone}}</text>
+      </view>
+      <view wx:hidden="{{searchData.courier}}">
+        <text class="leftText">快递员:</text>
+        <text class="rightText">{{searchData.courier}}</text>
+      </view>
+      <view>
+        <text class="leftText">快递员电话:</text>
+        <text class="rightText">{{searchData.courierPhone}}</text>
+      </view>
+      <view>
+        <text class="leftText">快递轨迹信息最新时间:</text>
+        <text class="rightText">{{searchData.updateTime}}</text>
+      </view>
+      <view>
+        <text class="leftText">发货到收货消耗时长 (截止最新轨迹):</text>
+        <text class="rightText">{{searchData.takeTime}}</text>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="line"></view>
+    <view class="line"></view>
+    <view class="pick">
+      <view class="pick-list" wx:for="{{searchData.list}}" wx:key="time">
+        <view class="pick-list-left">{{item.time}}</view>
+        <view class="pick-list-right">{{item.status}}</view>
+      </view>
+    </view>
+  
+  </view>
+  
+  <view  wx:else style="height:80vh">
+  </view>
+      <view class="jishu">
+          技术支持
+      </view>
+        
+</view>
+

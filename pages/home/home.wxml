@@ -1,0 +1,63 @@
+<!--pages/home/home.wxml-->
+
+<view class="super">
+  <view class="header">
+    <view class="header_img">
+      <image src="/images/yuandian.png" class="img"></image>
+    </view>
+    <text class="header_right">为您找到附近[{{charLiseSize}}]个充电桩，GO！</text>
+    <!-- <i-button bind:click="handleClick" type="info" inline="true" size="small" i-class="i-btn">Info</i-button> -->
+    <view class="btns">
+      <!-- <view class="header_btn" >进入地图</view> -->
+      <button  class="header_btn" size="mini" bindtap="movIn"><text class="btnText">进入地图</text></button>
+      <button class="header_btn" size="mini" open-type='share'><text class="btnText">分享</text></button>
+      <!-- <i-button bind:click="handleClick" type="info" inline="true" size="small" i-class="i-btn">进入地图</i-button> -->
+    </view>
+      
+  </view>
+  <view class="main" wx:for="10" wx:for="{{charLise}}" wx:key="{{index}}" bindtap='navigation'  data-longitude="{{item.location.lng}}" 
+  data-title="{{item.title}}" data-latitude="{{item.location.lat}}" data-address="{{item.address}}">
+    <view class="main_left">
+      <view class="main_left_top">
+        <view class="main_avatar">
+          <image  class="main_avatar_icon" src="../../images/chongdianzhuang.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+       <view class="main_title">
+          {{item.title}}
+       </view>
+      </view>
+      <view class="main_left_bottom">
+        <view class="main_avatar">
+          <image  class="main_avatar_icon" src="../../images/dingwei.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+       <view class="main_title" style="font-size: 25rpx;">
+          {{item.address}}
+       </view>
+      </view>
+    </view>
+
+
+
+    <view class="main_right">
+        <view class="main_right_meter" >
+          距离：{{item._distance}}米
+        </view>
+        <view class="main_right_jiantou">
+          <image  class="main_avatar_icon" src="../../images/jiantou.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+          <!-- <image class="main_right_jiantou" src="../../images/jiantou.png" mode="widthFix" lazy-load="false" binderror="" bindload="" /> -->
+    </view>
+      
+  </view>
+  
+  <!-- <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view>
+  <view class="main"></view> -->
+  <view class="footer">技术支持：qyh0518@163.com</view>
+</view>
